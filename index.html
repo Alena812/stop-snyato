@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Стоп! Снято! — направления дизайна</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#121212;
+    --panel:#1b1b1b;
+    --yellow:#F5D300;
+    --pink:#FF3C6A;
+    --blue:#2F6BFF;
+    --lime:#A6FF3C;
+    --ink:#121212;
+    --paper:#F4F2EA;
+    color-scheme: dark;
+    padding-top: env(safe-area-inset-top,0px);
+    padding-bottom: env(safe-area-inset-bottom,0px);
+    box-sizing: border-box;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--paper);
+    font-family:'Manrope',sans-serif; line-height:1.5;
+  }
+  h1,h2,h3{font-family:'Montserrat',sans-serif; margin:0; line-height:1.02; letter-spacing:-0.01em;}
+  .wrap{max-width:980px; margin:0 auto; padding:0 24px;}
+  header{
+    padding:72px 24px 56px; position:relative; overflow:hidden;
+    background: var(--bg);
+  }
+  header::before{
+    content:""; position:absolute; top:-80px; right:-100px; width:360px; height:360px;
+    background:var(--pink); border-radius:50%; opacity:.9; z-index:0;
+  }
+  header::after{
+    content:""; position:absolute; bottom:-120px; left:-80px; width:260px; height:260px;
+    background:var(--blue); transform:rotate(18deg); opacity:.85; z-index:0;
+  }
+  header .wrap{position:relative; z-index:1;}
+  .eyebrow{color:var(--yellow); font-weight:800; font-size:.95rem; margin-bottom:14px;}
+  h1{font-size:clamp(2.4rem, 6vw, 4.2rem); font-weight:900; color:var(--paper);}
+  .sub{color:var(--yellow); font-size:1.3rem; font-weight:800; margin-top:10px;}
+  section{padding:64px 24px; border-top:3px solid #2a2a2a;}
+  .lead{font-size:1.15rem; max-width:64ch; color:#e8e6dd;}
+  h2{font-size:clamp(1.5rem,3.4vw,2.1rem); font-weight:900; margin-top:0; margin-bottom:26px;}
+  .principles{display:grid; gap:14px; list-style:none; padding:0; margin:0; max-width:70ch;}
+  .principles li{
+    background:var(--panel); border-left:5px solid var(--lime);
+    padding:16px 18px; font-weight:600; font-size:1.02rem;
+  }
+  .directions{display:grid; gap:22px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+  .card{
+    background:var(--panel); padding:34px 26px 30px; border-radius:2px;
+    position:relative; overflow:hidden;
+  }
+  .card .num{
+    font-family:'Montserrat'; font-weight:900; font-size:3.4rem; opacity:.18;
+    position:absolute; top:6px; right:16px; line-height:1;
+  }
+  .card h3{font-size:1.25rem; font-weight:900; margin-bottom:10px; max-width:85%;}
+  .card p{font-size:.98rem; color:#d9d7ce; margin:0;}
+  .c1{border-top:6px solid var(--pink);}
+  .c2{border-top:6px solid var(--blue);}
+  .c3{border-top:6px solid var(--yellow);}
+  .anim-note{display:block; margin-top:14px; font-size:.86rem; font-weight:700;}
+  .c1 .anim-note{color:var(--pink);}
+  .c2 .anim-note{color:var(--blue);}
+  .c3 .anim-note{color:var(--yellow);}
+  .anim-end{margin-top:18px; font-size:.92rem; font-weight:600; color:#d9d7ce; max-width:70ch;}
+  .intro-note{background:var(--panel); border-left:5px solid var(--lime); padding:16px 18px; font-size:.95rem; font-weight:600; color:#d9d7ce; max-width:72ch; margin-top:28px;}
+  .anim{
+    background:var(--yellow); color:var(--ink); padding:40px 28px; border-radius:2px;
+    font-weight:800; font-size:1.15rem; max-width:70ch;
+  }
+  .anim b{display:block; font-family:'Montserrat'; font-size:1rem; font-weight:900; margin-bottom:10px; letter-spacing:.02em;}
+  footer{padding:36px 24px 60px; color:#8c8a82; font-size:.88rem;}
+  @media (max-width:520px){
+    header{padding:56px 18px 44px;}
+    section{padding:44px 0;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">БРЕНД И НАПРАВЛЕНИЯ ДИЗАЙНА</div>
+    <h1>Стоп! Снято!</h1>
+    <div class="sub">Актёрская киностудия, Иркутск</div>
+    <p class="intro-note">Эта работа — уже часть большого проекта: первый этап мудборда и концепций направлений логотипа. Чтобы быстрее показать вам варианты решения и помочь принять решение, оформляем это как часть коммерческого предложения.</p>
+  </div>
+</header>
+
+<section class="wrap" style="padding-top:40px; padding-bottom:20px;">
+  <h2>Как мы понимаем аудиторию и задачу</h2>
+  <p class="lead">Широкий диапазон — от 3 до 18 лет, несколько филиалов в Иркутске плюс выездные кинолагеря на Байкале. Ученики не только играют на сцене, но и снимаются в кино — среди выпускников есть известные актёры. Задача — единый визуальный язык, который одинаково сильно работает на родителей малышей и на подростков, без ухода в «детскость».</p>
+</section>
+
+<section class="wrap" style="padding-top:40px; padding-bottom:40px;">
+  <h2>Общие принципы стиля</h2>
+  <ul class="principles">
+    <li>Ярко, но не мультяшно — без клякс и размытых форм</li>
+    <li>Чёткие, уверенные формы — смелость, а не милота</li>
+    <li>Яркость закрывает «детскую» аудиторию, кинематографичность — старшую</li>
+  </ul>
+</section>
+
+<section class="wrap" style="padding-top:40px; padding-bottom:40px;">
+  <h2>Три направления</h2>
+  <div class="directions">
+    <div class="card c1">
+      <div class="num">01</div>
+      <h3>Мемфис / Максимализм</h3>
+      <p>Яркие геометрические формы, смелые сочетания цветов в духе Memphis Design — чётко, без хаотичности. Коллажность, крупные декоративные формы.</p>
+      <span class="anim-note">Анимация: «пазлы» собираются при скролле — навыки ребёнка</span>
+    </div>
+    <div class="card c2">
+      <div class="num">02</div>
+      <h3>Тёмная тема + яркие акценты</h3>
+      <p>Тёмный/чёрный базовый фон с яркими акцентными цветами как контрастными вспышками — сценический, «софитный» эффект, сочетается со сдержанной геометрией: ограниченная яркая палитра, чистые простые формы без лишней декоративности, много воздуха в композиции.</p>
+      <span class="anim-note">Анимация: мягкие вспышки акцента, плавные переходы</span>
+    </div>
+    <div class="card c3">
+      <div class="num">03</div>
+      <h3>Ретро-киноплакат</h3>
+      <p>Винтажная эстетика киноафиш середины XX века: плотные флэт-цветовые блоки, лёгкая зернистая текстура, драматичная леттеринг-типографика в заголовках. Ностальгия по «настоящему кино» одинаково работает и на родителей, и на подростков, при этом не читается как детская иллюстрация — наоборот, добавляет весомости и взрослого характера.</p>
+      <span class="anim-note">Анимация: «перелистывание» афиш/кадров плёнки, с зерном</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:40px;">
+  <h2>Концепция анимации сайта</h2>
+  <div class="anim">
+    <b>SCROLL-ПУТЕШЕСТВИЕ</b>
+    Визуальная история трансформации ученика: от застенчивого ребёнка до уверенного артиста, который выступает на сцене и снимается в кино.
+  </div>
+  <p class="anim-end">Важно показать не только переход «стеснительный → уверенный», но и то, что эта уверенность переносится в обычную жизнь ребёнка — школу, общение со сверстниками, дальнейшие решения. Идея: «мы не просто учим выступать — мы меняем то, как человек проживает свою жизнь».</p>
+</section>
+
+</body>
+</html>
